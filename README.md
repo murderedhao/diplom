@@ -1,4 +1,4 @@
-## SVF - File sharing
+## diplom - File sharing
 
 ## Technologies Used
 
