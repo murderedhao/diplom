@@ -309,13 +309,13 @@ const AddPatient = ({ isActive, setIsActive }: PropsModal) => {
 					<div className='flex justify-between gap-5 mb-2'>
 						<div className='flex flex-col w-full gap-1'>
 							<label className='font-openSans text-[16px]' htmlFor=''>
-								Статус лечения
+								Статус трудоустройства
 							</label>
 							<Select<Option>
 								options={treatmentStatusOptions}
 								value={selectedTreatmentStatus}
 								onChange={handleChangeTreatmentStatus}
-								placeholder='Выберите статус лечения'
+								placeholder='Выберите статус трудоустройства'
 								className='react-select-container'
 								classNamePrefix='react-select'
 								styles={customStyles}
@@ -333,7 +333,7 @@ const AddPatient = ({ isActive, setIsActive }: PropsModal) => {
 						</div>
 						<div className='flex flex-col w-full gap-1'>
 							<label className='font-openSans text-[16px]' htmlFor=''>
-								Дата начала лечения
+								Дата начала поиска
 							</label>
 							<input
 								className='border-[1px] border-[#1A1A1A] p-[10px] rounded-[12px]'
@@ -352,15 +352,7 @@ const AddPatient = ({ isActive, setIsActive }: PropsModal) => {
 								{...patientData.register('volume_work')}
 							></textarea>
 						</div>
-						<div className='flex flex-col w-full gap-1'>
-							<label className='font-openSans text-[16px]' htmlFor=''>
-								Цена работы
-							</label>
-							<textarea
-								className='bg-[#F1F4F9] border-[1px] border-[#1A1A1A] p-3 rounded-[12px] min-h-[45px] h-[135px]'
-								{...patientData.register('price_work')}
-							></textarea>
-						</div>
+						<div className='flex flex-col w-full gap-1'></div>
 					</div>
 					{user && user.role == adminRole && (
 						<>

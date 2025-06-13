@@ -3,7 +3,6 @@ import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import arrow from '../assets/arrow.svg'
 import hidePassword from '../assets/hidePassword.svg'
-import logo from '../assets/logo&company.svg'
 import { useAuth } from '../service/useAuth.tsx'
 import { getRedirectPath } from '../service/utils'
 import styles from '../styles/Login.module.css'
@@ -87,9 +86,6 @@ const LoginPage = () => {
 		<div className={styles.background__login}>
 			<div className='flex items-center justify-center'>
 				<div className='bg-[#FFFFFF] rounded-md border-[0.5px] border-[#B9B9B9] p-8 w-full ml-[420px] mr-[420px] mt-[237px] mb-[237px] min-w-[350px] max-w-[600px]'>
-					<div className='flex justify-center'>
-						<img src={logo} alt='Logo' />
-					</div>
 					<div className='gap-1 mt-1 text-center'>
 						<h1 className='text-[20px] font-openSans font-normal'>
 							Авторизация

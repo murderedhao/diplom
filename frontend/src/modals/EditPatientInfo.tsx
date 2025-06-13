@@ -333,13 +333,13 @@ const EditPatientInfo = ({ isActive, setIsActive, patient }: PropsModal) => {
 									className='font-openSans text-[16px]'
 									htmlFor='treatment_status'
 								>
-									Статус лечения
+									Статус трудоустройства
 								</label>
 								<Select<Option>
 									options={treatmentStatusOptions}
 									value={selectedTreatmentStatus}
 									onChange={handleChangeTreatmentStatus}
-									placeholder='Выберите статус лечения'
+									placeholder='Выберите статус трудоустройства'
 									className='react-select-container'
 									classNamePrefix='react-select'
 									styles={customStyles}
@@ -363,7 +363,7 @@ const EditPatientInfo = ({ isActive, setIsActive, patient }: PropsModal) => {
 									className='font-openSans text-[16px]'
 									htmlFor='date_start_treatment'
 								>
-									Дата начала лечения
+									Дата начала поиска
 								</label>
 								<input
 									className='border-[1px] border-[#1A1A1A] p-[10px] rounded-[12px]'
@@ -386,12 +386,6 @@ const EditPatientInfo = ({ isActive, setIsActive, patient }: PropsModal) => {
 								/>
 							</div>
 							<div className='flex flex-col w-full gap-1'>
-								<label
-									className='font-openSans text-[16px]'
-									htmlFor='price_work'
-								>
-									Цена работы
-								</label>
 								<textarea
 									className='bg-[#F1F4F9] border-[1px] border-[#1A1A1A] p-3 rounded-[12px] h-[135px]'
 									{...patientData.register('price_work')}

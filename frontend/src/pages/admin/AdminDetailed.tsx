@@ -239,7 +239,7 @@ const AdminDetailed = () => {
 						<Select<Option, true>
 							className='flex-1'
 							options={treatmentStatusOptions}
-							placeholder='Фильтр по статусу лечения'
+							placeholder='Фильтр по статусу трудоустройства'
 							styles={customStyles}
 							onChange={handleTreatmentStatusChange}
 							value={selectedTreatmentStatuses}

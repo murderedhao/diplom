@@ -110,7 +110,7 @@ const OperatorTable: React.FC<PatientTableProps> = ({
 									Комментарий
 								</th>
 								<th className='p-4 text-left text-[#76767A] text-[16px] whitespace-nowrap'>
-									Статус лечения
+									Статус трудоустройства
 								</th>
 								<th className='p-4 text-left text-[#76767A] text-[16px] cursor-pointer whitespace-nowrap'>
 									<div className='flex items-center'>
@@ -119,7 +119,7 @@ const OperatorTable: React.FC<PatientTableProps> = ({
 								</th>
 								<th className='p-4 text-left text-[#76767A] text-[16px] cursor-pointer whitespace-nowrap'>
 									<div className='flex items-center'>
-										<span>Дата начала лечения</span>
+										<span>Дата начала поиска</span>
 									</div>
 								</th>
 							</tr>

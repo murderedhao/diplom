@@ -2,7 +2,6 @@ import clsx from 'clsx'
 import { NavLink, useLocation } from 'react-router-dom'
 import consultant from '../../assets/consult.svg'
 import exit from '../../assets/exit.svg'
-import logo from '../../assets/logo&company.svg'
 import operator from '../../assets/operator.svg'
 import sideBarIconDetailed from '../../assets/sideBarIconDetailed.svg'
 import { useAuth } from '../../service/useAuth.tsx'
@@ -35,9 +34,6 @@ const SideBarAdmin = () => {
 	return (
 		<div className='min-w-[250px] bg-[#FFFFFF] h-screen left-0 top-0 flex flex-col'>
 			<div className='p-4'>
-				<div className='flex'>
-					<img src={logo} alt='Логотип' />
-				</div>
 				<div className='flex flex-col justify-center px-4 pt-3'>
 					<h1 className='font-openSans text-[24px] font-bold text-[#27272A]'>
 						Администратор
