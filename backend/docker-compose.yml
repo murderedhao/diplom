@@ -1,0 +1,45 @@
+services:
+  database:
+    image: postgis/postgis:13-master
+    container_name: svf_db
+    platform: linux/amd64
+    ports:
+      - 127.0.0.1:5432:5432
+    # Required when running on platform other than amd64, like Apple M1/M2:
+    volumes:
+      - ./data/database:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'pg_isready',
+          '--host=localhost',
+          '--username=${DB_USER}',
+          '--dbname=${DB_DATABASE}',
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_interval: 5s
+      start_period: 30s
+
+  directus:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/amd64
+    container_name: svf_directus
+    ports:
+      - 1056:8055
+    volumes:
+      - ./uploads:/directus/uploads
+      - ./extensions:/directus/extensions
+    depends_on:
+      database:
+        condition: service_healthy
+    env_file:
+      - .env

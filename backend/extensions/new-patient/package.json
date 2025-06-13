@@ -1,0 +1,40 @@
+{
+	"name": "new-patient",
+	"description": "Please enter a description for your extension",
+	"icon": "extension",
+	"version": "1.0.0",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-extension-endpoint"
+	],
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"directus:extension": {
+		"type": "endpoint",
+		"path": "dist/index.js",
+		"source": "src/index.ts",
+		"host": "^10.10.0"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link",
+		"validate": "directus-extension validate"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "13.0.3",
+		"@types/jsonwebtoken": "^9.0.9",
+		"@types/node": "^22.13.11",
+		"typescript": "^5.8.2"
+	},
+	"dependencies": {
+		"@types/multer": "^1.4.12",
+		"argon2": "^0.41.1",
+		"jsonwebtoken": "^9.0.2",
+		"multer": "^1.4.5-lts.2",
+		"uuid": "^11.1.0"
+	}
+}

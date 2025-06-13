@@ -1,0 +1,29 @@
+{
+  "collection": "Patients",
+  "field": "control_after_six_months",
+  "type": "alias",
+  "meta": {
+    "collection": "Patients",
+    "conditions": null,
+    "display": null,
+    "display_options": null,
+    "field": "control_after_six_months",
+    "group": null,
+    "hidden": false,
+    "interface": "group-raw",
+    "note": null,
+    "options": null,
+    "readonly": false,
+    "required": false,
+    "sort": 17,
+    "special": [
+      "alias",
+      "no-data",
+      "group"
+    ],
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  }
+}

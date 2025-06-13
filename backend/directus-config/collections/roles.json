@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Administrator",
+    "icon": "verified",
+    "description": "$t:admin_description",
+    "parent": null,
+    "_syncId": "_sync_default_admin_role"
+  },
+  {
+    "name": "admin",
+    "icon": "supervised_user_circle",
+    "description": "администратор сайта",
+    "parent": null,
+    "_syncId": "078c5d27-b84b-46bb-8058-13fc238ce13f"
+  },
+  {
+    "name": "patient",
+    "icon": "supervised_user_circle",
+    "description": "пациент",
+    "parent": null,
+    "_syncId": "a50259f6-915a-4b90-b339-72399d07b648"
+  },
+  {
+    "name": "operator",
+    "icon": "supervised_user_circle",
+    "description": null,
+    "parent": null,
+    "_syncId": "d7f9f74b-dd6c-4313-9b44-f7fa25b223b6"
+  }
+]

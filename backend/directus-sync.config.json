@@ -1,0 +1,5 @@
+{
+	"directusUrl": "https://directus.prosvf.ru",
+	"directusEmail": "admin@example.com",
+	"directusPassword": "admin"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "tt",
+    "key": "tt",
+    "type": "log",
+    "position_x": 19,
+    "position_y": 1,
+    "options": {
+      "message": "{{$env}}"
+    },
+    "resolve": null,
+    "reject": null,
+    "flow": "92764cd8-3f81-4860-9bbf-e8f787ecbac0",
+    "_syncId": "35bd2b93-895a-4472-8c66-636bb488ef67"
+  }
+]

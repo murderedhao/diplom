@@ -1,0 +1,74 @@
+{
+  "collection": "Users",
+  "field": "access",
+  "type": "string",
+  "meta": {
+    "collection": "Users",
+    "conditions": null,
+    "display": "labels",
+    "display_options": {
+      "choices": [
+        {
+          "background": "#00FF11",
+          "color": "#00FF11",
+          "foreground": "#00FF11",
+          "text": "Разрешено",
+          "value": "allowed"
+        },
+        {
+          "background": "#FF0000",
+          "color": "#FF0000",
+          "foreground": "#FF0000",
+          "text": "Запрещено",
+          "value": "denied"
+        }
+      ],
+      "showAsDot": true
+    },
+    "field": "access",
+    "group": null,
+    "hidden": false,
+    "interface": "select-dropdown",
+    "note": null,
+    "options": {
+      "choices": [
+        {
+          "color": "#00FF11",
+          "text": "Разрешено",
+          "value": "allowed"
+        },
+        {
+          "color": "#FF0000",
+          "text": "Запрещено",
+          "value": "denied"
+        }
+      ]
+    },
+    "readonly": false,
+    "required": false,
+    "sort": 3,
+    "special": null,
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "schema": {
+    "name": "access",
+    "table": "Users",
+    "data_type": "character varying",
+    "default_value": "draft",
+    "max_length": 255,
+    "numeric_precision": null,
+    "numeric_scale": null,
+    "is_nullable": false,
+    "is_unique": false,
+    "is_indexed": false,
+    "is_primary_key": false,
+    "is_generated": false,
+    "generation_expression": null,
+    "has_auto_increment": false,
+    "foreign_key_table": null,
+    "foreign_key_column": null
+  }
+}
