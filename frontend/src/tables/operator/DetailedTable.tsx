@@ -55,7 +55,7 @@ const OperatorDetailedTable: React.FC<PatientTableProps> = ({
 			const userId = patientData.data.user
 
 			if (!userId) {
-				throw new Error('У пациента нет привязанного пользователя')
+				throw new Error('нет привязанного пользователя')
 			}
 			const response = await fetch(`${directusUrl}/users/${userId}`, {
 				method: 'PATCH',

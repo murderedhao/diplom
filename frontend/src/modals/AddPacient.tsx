@@ -175,7 +175,7 @@ const AddPatient = ({ isActive, setIsActive }: PropsModal) => {
 		<div className='fixed top-0 left-0 w-full h-full bg-[#1F1F1F] bg-opacity-[30%] flex justify-center items-center px-4 sm:px-[168px] z-[99998]'>
 			<div className='bg-[#FFFFFF] rounded-[12px] border-[0.5px] border-[#B9B9B9] py-6 px-4 sm:px-8 w-full max-w-[1100px] max-h-screen overflow-y-auto'>
 				<h1 className='text-[20px] mb-[38px] text-black font-openSans font-bold'>
-					Добавить пациента
+					Добавить
 				</h1>
 				{showNewPasswordAlert && (
 					<div className='p-4 bg-[#E6FFDA] mt-3 relative mb-5'>

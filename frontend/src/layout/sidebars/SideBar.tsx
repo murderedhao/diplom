@@ -50,7 +50,7 @@ const SideBar = () => {
 									activeMenu === 'general' && 'filter brightness-0 invert'
 								)}
 							/>
-							Список пациентов общий
+							Список пользователей общий
 						</div>
 					</Link>
 				</li>
@@ -78,7 +78,7 @@ const SideBar = () => {
 									activeMenu === 'detailed' && 'filter brightness-0 invert'
 								)}
 							/>
-							Список пациентов подробно
+							Список пользователей подробно
 						</div>
 					</Link>
 				</li>

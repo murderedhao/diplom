@@ -239,7 +239,7 @@ const OperatorDetailed = () => {
 								onClick={() => setModalOpen(true)}
 							>
 								<img src={iconUser} alt='Добавить' />
-								<p className='text-white'>Добавить пациента</p>
+								<p className='text-white'>Добавить</p>
 							</button>
 							<AddPacient isActive={modalOpen} setIsActive={setModalOpen} />
 						</div>
@@ -273,7 +273,7 @@ const OperatorDetailed = () => {
 						</div>
 					) : patients.length === 0 ? (
 						<div className='flex items-center justify-center h-64'>
-							<p>Пациенты не найдены</p>
+							<p>пользователи не найдены</p>
 						</div>
 					) : (
 						<OperatorDetailedTable
